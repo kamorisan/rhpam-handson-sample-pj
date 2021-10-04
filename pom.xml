@@ -9,6 +9,21 @@
   <name>sample</name>
   <description>これはサンプルプロジェクトです。</description>
   <dependencies>
+
+    <dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-decisiontables</artifactId>
+      <version>7.44.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+		</dependency>
+
+    <dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+      <version>7.44.0.Final-redhat-00003</version>
+      <scope>provided</scope>
+		</dependency>
+
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
