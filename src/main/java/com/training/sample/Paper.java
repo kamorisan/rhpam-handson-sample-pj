@@ -20,8 +20,11 @@ public class Paper implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("予算")
 	private java.lang.Integer budget;
 
-	@org.kie.api.definition.type.Label(value = "データチェック結果")
+	@org.kie.api.definition.type.Label("データチェック結果")
 	private java.lang.Boolean dataCheck;
+
+	@org.kie.api.definition.type.Label(value = "自動承認チェック")
+	private java.lang.Boolean autoApprovalCheck;
 
 	public Paper() {
 	}
@@ -74,15 +77,25 @@ public class Paper implements java.io.Serializable {
 		this.dataCheck = dataCheck;
 	}
 
+	public java.lang.Boolean getAutoApprovalCheck() {
+		return this.autoApprovalCheck;
+	}
+
+	public void setAutoApprovalCheck(java.lang.Boolean autoApprovalCheck) {
+		this.autoApprovalCheck = autoApprovalCheck;
+	}
+
 	public Paper(java.lang.String name, java.lang.Integer paperId,
 			java.lang.String paperType, java.util.Date submitDate,
-			java.lang.Integer budget, java.lang.Boolean dataCheck) {
+			java.lang.Integer budget, java.lang.Boolean dataCheck,
+			java.lang.Boolean autoApprovalCheck) {
 		this.name = name;
 		this.paperId = paperId;
 		this.paperType = paperType;
 		this.submitDate = submitDate;
 		this.budget = budget;
 		this.dataCheck = dataCheck;
+		this.autoApprovalCheck = autoApprovalCheck;
 	}
 
 }
