@@ -17,8 +17,11 @@ public class Paper implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("申請日")
 	private java.util.Date submitDate;
 
-	@org.kie.api.definition.type.Label(value = "予算")
+	@org.kie.api.definition.type.Label("予算")
 	private java.lang.Integer budget;
+
+	@org.kie.api.definition.type.Label(value = "データチェック結果")
+	private java.lang.Boolean dataCheck;
 
 	public Paper() {
 	}
@@ -63,14 +66,23 @@ public class Paper implements java.io.Serializable {
 		this.budget = budget;
 	}
 
+	public java.lang.Boolean getDataCheck() {
+		return this.dataCheck;
+	}
+
+	public void setDataCheck(java.lang.Boolean dataCheck) {
+		this.dataCheck = dataCheck;
+	}
+
 	public Paper(java.lang.String name, java.lang.Integer paperId,
 			java.lang.String paperType, java.util.Date submitDate,
-			java.lang.Integer budget) {
+			java.lang.Integer budget, java.lang.Boolean dataCheck) {
 		this.name = name;
 		this.paperId = paperId;
 		this.paperType = paperType;
 		this.submitDate = submitDate;
 		this.budget = budget;
+		this.dataCheck = dataCheck;
 	}
 
 }
