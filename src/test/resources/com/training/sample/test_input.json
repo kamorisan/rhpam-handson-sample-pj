@@ -1,0 +1,11 @@
+{
+    "paper": {
+      "Paper": {
+        "paperType": "B",
+        "name": "mori",
+        "submitDate": 1633050000000,
+        "paperId": 1,
+        "budget": 100
+      }
+    }
+  }
